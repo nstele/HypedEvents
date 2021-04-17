@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC51F1972628BB5F004874C4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51F1962628BB5F004874C4 /* MainView.swift */; };
+		CC51F19F2628E7FC004874C4 /* HypedListSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51F19E2628E7FC004874C4 /* HypedListSidebarView.swift */; };
+		CC56B019262B0A3F007503C8 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = CC56B018262B0A3F007503C8 /* SwiftDate */; };
+		CC56B01B262B0A44007503C8 /* UIColor_Hex_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = CC56B01A262B0A44007503C8 /* UIColor_Hex_Swift */; };
+		CC56B01D262B0A49007503C8 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = CC56B01C262B0A49007503C8 /* SwiftDate */; };
+		CC56B01F262B0A4D007503C8 /* UIColor_Hex_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = CC56B01E262B0A4D007503C8 /* UIColor_Hex_Swift */; };
+		CCBAD7572621D7FA00555180 /* HypeEventTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7562621D7FA00555180 /* HypeEventTileView.swift */; };
+		CCBAD78D2622444E00555180 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC5C261E829F00DA83F3 /* HypedEvent.swift */; };
+		CCBAD78E2622444E00555180 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC5C261E829F00DA83F3 /* HypedEvent.swift */; };
+		CCBAD7922622503D00555180 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7912622503D00555180 /* DataController.swift */; };
+		CCBAD79E262275DE00555180 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7912622503D00555180 /* DataController.swift */; };
+		CCBAD79F262275DE00555180 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7912622503D00555180 /* DataController.swift */; };
+		CCBAD7A526232BCD00555180 /* HypedEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7A426232BCD00555180 /* HypedEventListView.swift */; };
+		CCBAD7AF26232FFD00555180 /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7AE26232FFD00555180 /* PastView.swift */; };
+		CCBAD7B52623A57000555180 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7B42623A57000555180 /* DiscoverView.swift */; };
+		CCBAD7B92623B08000555180 /* HypeEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7B82623B08000555180 /* HypeEventDetailView.swift */; };
+		CCBAD7C42626452900555180 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBAD7C32626452900555180 /* WidgetKit.framework */; };
+		CCBAD7C62626452900555180 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBAD7C52626452900555180 /* SwiftUI.framework */; };
+		CCBAD7C92626452900555180 /* HypedListiOSWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7C82626452900555180 /* HypedListiOSWidget.swift */; };
+		CCBAD7CB2626452D00555180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBAD7CA2626452D00555180 /* Assets.xcassets */; };
+		CCBAD7CF2626452D00555180 /* HypedListiOSWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CCBAD7C22626452900555180 /* HypedListiOSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCBAD7D726264A7000555180 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC5C261E829F00DA83F3 /* HypedEvent.swift */; };
+		CCBAD7DB26264B3A00555180 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAD7912622503D00555180 /* DataController.swift */; };
+		CCF7DC22261E50CD00DA83F3 /* HypedListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC21261E50CD00DA83F3 /* HypedListApp.swift */; };
+		CCF7DC24261E50CD00DA83F3 /* HypedListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC23261E50CD00DA83F3 /* HypedListTabView.swift */; };
+		CCF7DC26261E50D300DA83F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF7DC25261E50D300DA83F3 /* Assets.xcassets */; };
+		CCF7DC29261E50D300DA83F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF7DC28261E50D300DA83F3 /* Preview Assets.xcassets */; };
+		CCF7DC34261E50D400DA83F3 /* HypedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC33261E50D400DA83F3 /* HypedListTests.swift */; };
+		CCF7DC3F261E50D400DA83F3 /* HypedListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC3E261E50D400DA83F3 /* HypedListUITests.swift */; };
+		CCF7DC53261E54B600DA83F3 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC52261E54B600DA83F3 /* UpcomingView.swift */; };
+		CCF7DC58261E7F7400DA83F3 /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC57261E7F7400DA83F3 /* CreateHypedEventView.swift */; };
+		CCF7DC5D261E829F00DA83F3 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC5C261E829F00DA83F3 /* HypedEvent.swift */; };
+		CCF7DC65261F386800DA83F3 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC64261F386800DA83F3 /* FormLabelView.swift */; };
+		CCF7DC76261F826000DA83F3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7DC75261F826000DA83F3 /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCBAD7CD2626452D00555180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF7DC16261E50CD00DA83F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCBAD7C12626452900555180;
+			remoteInfo = HypedListiOSWidgetExtension;
+		};
+		CCF7DC30261E50D400DA83F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF7DC16261E50CD00DA83F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF7DC1D261E50CD00DA83F3;
+			remoteInfo = HypedList;
+		};
+		CCF7DC3B261E50D400DA83F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF7DC16261E50CD00DA83F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF7DC1D261E50CD00DA83F3;
+			remoteInfo = HypedList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCBAD773262241C600555180 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBAD7D32626452D00555180 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CCBAD7CF2626452D00555180 /* HypedListiOSWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC51F1962628BB5F004874C4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CC51F19E2628E7FC004874C4 /* HypedListSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListSidebarView.swift; sourceTree = "<group>"; };
+		CCBAD7562621D7FA00555180 /* HypeEventTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeEventTileView.swift; sourceTree = "<group>"; };
+		CCBAD7912622503D00555180 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CCBAD7A426232BCD00555180 /* HypedEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventListView.swift; sourceTree = "<group>"; };
+		CCBAD7AE26232FFD00555180 /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
+		CCBAD7B42623A57000555180 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		CCBAD7B82623B08000555180 /* HypeEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeEventDetailView.swift; sourceTree = "<group>"; };
+		CCBAD7C22626452900555180 /* HypedListiOSWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HypedListiOSWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBAD7C32626452900555180 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CCBAD7C52626452900555180 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CCBAD7C82626452900555180 /* HypedListiOSWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListiOSWidget.swift; sourceTree = "<group>"; };
+		CCBAD7CA2626452D00555180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCBAD7CC2626452D00555180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBAD7E62628689B00555180 /* HypedListiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypedListiOS.entitlements; sourceTree = "<group>"; };
+		CCBAD7E72628691D00555180 /* HypedListiOSWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypedListiOSWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CCF7DC1E261E50CD00DA83F3 /* HypedListiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypedListiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF7DC21261E50CD00DA83F3 /* HypedListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListApp.swift; sourceTree = "<group>"; };
+		CCF7DC23261E50CD00DA83F3 /* HypedListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListTabView.swift; sourceTree = "<group>"; };
+		CCF7DC25261E50D300DA83F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCF7DC28261E50D300DA83F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCF7DC2A261E50D300DA83F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7DC2F261E50D400DA83F3 /* HypedListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypedListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF7DC33261E50D400DA83F3 /* HypedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListTests.swift; sourceTree = "<group>"; };
+		CCF7DC35261E50D400DA83F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7DC3A261E50D400DA83F3 /* HypedListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypedListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF7DC3E261E50D400DA83F3 /* HypedListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListUITests.swift; sourceTree = "<group>"; };
+		CCF7DC40261E50D400DA83F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7DC52261E54B600DA83F3 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		CCF7DC57261E7F7400DA83F3 /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
+		CCF7DC5C261E829F00DA83F3 /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
+		CCF7DC64261F386800DA83F3 /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
+		CCF7DC75261F826000DA83F3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCBAD7BF2626452900555180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBAD7C62626452900555180 /* SwiftUI.framework in Frameworks */,
+				CCBAD7C42626452900555180 /* WidgetKit.framework in Frameworks */,
+				CC56B01F262B0A4D007503C8 /* UIColor_Hex_Swift in Frameworks */,
+				CC56B01D262B0A49007503C8 /* SwiftDate in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC1B261E50CD00DA83F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC56B01B262B0A44007503C8 /* UIColor_Hex_Swift in Frameworks */,
+				CC56B019262B0A3F007503C8 /* SwiftDate in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC2C261E50D400DA83F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC37261E50D400DA83F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCBAD76B262241C600555180 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAD7C32626452900555180 /* WidgetKit.framework */,
+				CCBAD7C52626452900555180 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCBAD795262265FB00555180 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAD7912622503D00555180 /* DataController.swift */,
+				CCF7DC5C261E829F00DA83F3 /* HypedEvent.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CCBAD7962622660000555180 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC51F19E2628E7FC004874C4 /* HypedListSidebarView.swift */,
+				CCF7DC75261F826000DA83F3 /* ImagePicker.swift */,
+				CCF7DC64261F386800DA83F3 /* FormLabelView.swift */,
+				CCBAD7562621D7FA00555180 /* HypeEventTileView.swift */,
+				CCF7DC57261E7F7400DA83F3 /* CreateHypedEventView.swift */,
+				CCF7DC52261E54B600DA83F3 /* UpcomingView.swift */,
+				CCBAD7A426232BCD00555180 /* HypedEventListView.swift */,
+				CCBAD7AE26232FFD00555180 /* PastView.swift */,
+				CCBAD7B42623A57000555180 /* DiscoverView.swift */,
+				CCBAD7B82623B08000555180 /* HypeEventDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCBAD7C72626452900555180 /* HypedListiOSWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAD7C82626452900555180 /* HypedListiOSWidget.swift */,
+				CCBAD7CA2626452D00555180 /* Assets.xcassets */,
+				CCBAD7CC2626452D00555180 /* Info.plist */,
+			);
+			path = HypedListiOSWidget;
+			sourceTree = "<group>";
+		};
+		CCF7DC15261E50CD00DA83F3 = {
+			isa = PBXGroup;
+			children = (
+				CCBAD7E72628691D00555180 /* HypedListiOSWidgetExtension.entitlements */,
+				CCBAD7E62628689B00555180 /* HypedListiOS.entitlements */,
+				CCF7DC20261E50CD00DA83F3 /* HypedList */,
+				CCF7DC32261E50D400DA83F3 /* HypedListTests */,
+				CCF7DC3D261E50D400DA83F3 /* HypedListUITests */,
+				CCBAD7C72626452900555180 /* HypedListiOSWidget */,
+				CCF7DC1F261E50CD00DA83F3 /* Products */,
+				CCBAD76B262241C600555180 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCF7DC1F261E50CD00DA83F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7DC1E261E50CD00DA83F3 /* HypedListiOS.app */,
+				CCF7DC2F261E50D400DA83F3 /* HypedListTests.xctest */,
+				CCF7DC3A261E50D400DA83F3 /* HypedListUITests.xctest */,
+				CCBAD7C22626452900555180 /* HypedListiOSWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCF7DC20261E50CD00DA83F3 /* HypedList */ = {
+			isa = PBXGroup;
+			children = (
+				CC51F1962628BB5F004874C4 /* MainView.swift */,
+				CCF7DC21261E50CD00DA83F3 /* HypedListApp.swift */,
+				CCF7DC23261E50CD00DA83F3 /* HypedListTabView.swift */,
+				CCBAD7962622660000555180 /* Views */,
+				CCBAD795262265FB00555180 /* Data */,
+				CCF7DC25261E50D300DA83F3 /* Assets.xcassets */,
+				CCF7DC2A261E50D300DA83F3 /* Info.plist */,
+				CCF7DC27261E50D300DA83F3 /* Preview Content */,
+			);
+			path = HypedList;
+			sourceTree = "<group>";
+		};
+		CCF7DC27261E50D300DA83F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7DC28261E50D300DA83F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCF7DC32261E50D400DA83F3 /* HypedListTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7DC33261E50D400DA83F3 /* HypedListTests.swift */,
+				CCF7DC35261E50D400DA83F3 /* Info.plist */,
+			);
+			path = HypedListTests;
+			sourceTree = "<group>";
+		};
+		CCF7DC3D261E50D400DA83F3 /* HypedListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7DC3E261E50D400DA83F3 /* HypedListUITests.swift */,
+				CCF7DC40261E50D400DA83F3 /* Info.plist */,
+			);
+			path = HypedListUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCBAD7C12626452900555180 /* HypedListiOSWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBAD7D02626452D00555180 /* Build configuration list for PBXNativeTarget "HypedListiOSWidgetExtension" */;
+			buildPhases = (
+				CCBAD7BE2626452900555180 /* Sources */,
+				CCBAD7BF2626452900555180 /* Frameworks */,
+				CCBAD7C02626452900555180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HypedListiOSWidgetExtension;
+			packageProductDependencies = (
+				CC56B01C262B0A49007503C8 /* SwiftDate */,
+				CC56B01E262B0A4D007503C8 /* UIColor_Hex_Swift */,
+			);
+			productName = HypedListiOSWidgetExtension;
+			productReference = CCBAD7C22626452900555180 /* HypedListiOSWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CCF7DC1D261E50CD00DA83F3 /* HypedListiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF7DC43261E50D400DA83F3 /* Build configuration list for PBXNativeTarget "HypedListiOS" */;
+			buildPhases = (
+				CCF7DC1A261E50CD00DA83F3 /* Sources */,
+				CCF7DC1B261E50CD00DA83F3 /* Frameworks */,
+				CCF7DC1C261E50CD00DA83F3 /* Resources */,
+				CCBAD773262241C600555180 /* Embed Frameworks */,
+				CCBAD7D32626452D00555180 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCBAD7CE2626452D00555180 /* PBXTargetDependency */,
+			);
+			name = HypedListiOS;
+			packageProductDependencies = (
+				CC56B018262B0A3F007503C8 /* SwiftDate */,
+				CC56B01A262B0A44007503C8 /* UIColor_Hex_Swift */,
+			);
+			productName = HypedList;
+			productReference = CCF7DC1E261E50CD00DA83F3 /* HypedListiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCF7DC2E261E50D400DA83F3 /* HypedListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF7DC46261E50D400DA83F3 /* Build configuration list for PBXNativeTarget "HypedListTests" */;
+			buildPhases = (
+				CCF7DC2B261E50D400DA83F3 /* Sources */,
+				CCF7DC2C261E50D400DA83F3 /* Frameworks */,
+				CCF7DC2D261E50D400DA83F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF7DC31261E50D400DA83F3 /* PBXTargetDependency */,
+			);
+			name = HypedListTests;
+			productName = HypedListTests;
+			productReference = CCF7DC2F261E50D400DA83F3 /* HypedListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCF7DC39261E50D400DA83F3 /* HypedListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF7DC49261E50D400DA83F3 /* Build configuration list for PBXNativeTarget "HypedListUITests" */;
+			buildPhases = (
+				CCF7DC36261E50D400DA83F3 /* Sources */,
+				CCF7DC37261E50D400DA83F3 /* Frameworks */,
+				CCF7DC38261E50D400DA83F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF7DC3C261E50D400DA83F3 /* PBXTargetDependency */,
+			);
+			name = HypedListUITests;
+			productName = HypedListUITests;
+			productReference = CCF7DC3A261E50D400DA83F3 /* HypedListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCF7DC16261E50CD00DA83F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CCBAD7C12626452900555180 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CCF7DC1D261E50CD00DA83F3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CCF7DC2E261E50D400DA83F3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CCF7DC1D261E50CD00DA83F3;
+					};
+					CCF7DC39261E50D400DA83F3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CCF7DC1D261E50CD00DA83F3;
+					};
+				};
+			};
+			buildConfigurationList = CCF7DC19261E50CD00DA83F3 /* Build configuration list for PBXProject "HypedList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCF7DC15261E50CD00DA83F3;
+			packageReferences = (
+				CCBAD786262242C100555180 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				CCBAD79926226DF700555180 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
+			);
+			productRefGroup = CCF7DC1F261E50CD00DA83F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCF7DC1D261E50CD00DA83F3 /* HypedListiOS */,
+				CCF7DC2E261E50D400DA83F3 /* HypedListTests */,
+				CCF7DC39261E50D400DA83F3 /* HypedListUITests */,
+				CCBAD7C12626452900555180 /* HypedListiOSWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCBAD7C02626452900555180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBAD7CB2626452D00555180 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC1C261E50CD00DA83F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7DC29261E50D300DA83F3 /* Preview Assets.xcassets in Resources */,
+				CCF7DC26261E50D300DA83F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC2D261E50D400DA83F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC38261E50D400DA83F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCBAD7BE2626452900555180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBAD7C92626452900555180 /* HypedListiOSWidget.swift in Sources */,
+				CCBAD7DB26264B3A00555180 /* DataController.swift in Sources */,
+				CCBAD7D726264A7000555180 /* HypedEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC1A261E50CD00DA83F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7DC65261F386800DA83F3 /* FormLabelView.swift in Sources */,
+				CC51F1972628BB5F004874C4 /* MainView.swift in Sources */,
+				CCF7DC58261E7F7400DA83F3 /* CreateHypedEventView.swift in Sources */,
+				CCBAD7AF26232FFD00555180 /* PastView.swift in Sources */,
+				CC51F19F2628E7FC004874C4 /* HypedListSidebarView.swift in Sources */,
+				CCF7DC5D261E829F00DA83F3 /* HypedEvent.swift in Sources */,
+				CCBAD7572621D7FA00555180 /* HypeEventTileView.swift in Sources */,
+				CCBAD7922622503D00555180 /* DataController.swift in Sources */,
+				CCF7DC76261F826000DA83F3 /* ImagePicker.swift in Sources */,
+				CCF7DC24261E50CD00DA83F3 /* HypedListTabView.swift in Sources */,
+				CCBAD7B92623B08000555180 /* HypeEventDetailView.swift in Sources */,
+				CCF7DC22261E50CD00DA83F3 /* HypedListApp.swift in Sources */,
+				CCBAD7A526232BCD00555180 /* HypedEventListView.swift in Sources */,
+				CCF7DC53261E54B600DA83F3 /* UpcomingView.swift in Sources */,
+				CCBAD7B52623A57000555180 /* DiscoverView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC2B261E50D400DA83F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7DC34261E50D400DA83F3 /* HypedListTests.swift in Sources */,
+				CCBAD79F262275DE00555180 /* DataController.swift in Sources */,
+				CCBAD78D2622444E00555180 /* HypedEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7DC36261E50D400DA83F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7DC3F261E50D400DA83F3 /* HypedListUITests.swift in Sources */,
+				CCBAD79E262275DE00555180 /* DataController.swift in Sources */,
+				CCBAD78E2622444E00555180 /* HypedEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCBAD7CE2626452D00555180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCBAD7C12626452900555180 /* HypedListiOSWidgetExtension */;
+			targetProxy = CCBAD7CD2626452D00555180 /* PBXContainerItemProxy */;
+		};
+		CCF7DC31261E50D400DA83F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF7DC1D261E50CD00DA83F3 /* HypedListiOS */;
+			targetProxy = CCF7DC30261E50D400DA83F3 /* PBXContainerItemProxy */;
+		};
+		CCF7DC3C261E50D400DA83F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF7DC1D261E50CD00DA83F3 /* HypedListiOS */;
+			targetProxy = CCF7DC3B261E50D400DA83F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CCBAD7D12626452D00555180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HypedListiOSWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				INFOPLIST_FILE = HypedListiOSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedList.HypedListiOSWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCBAD7D22626452D00555180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HypedListiOSWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				INFOPLIST_FILE = HypedListiOSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedList.HypedListiOSWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCF7DC41261E50D400DA83F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCF7DC42261E50D400DA83F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCF7DC44261E50D400DA83F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HypedListiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HypedList/Preview Content\"";
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HypedList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCF7DC45261E50D400DA83F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HypedListiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HypedList/Preview Content\"";
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HypedList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCF7DC47261E50D400DA83F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				INFOPLIST_FILE = HypedListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HypedList.app/HypedList";
+			};
+			name = Debug;
+		};
+		CCF7DC48261E50D400DA83F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				INFOPLIST_FILE = HypedListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HypedList.app/HypedList";
+			};
+			name = Release;
+		};
+		CCF7DC4A261E50D400DA83F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				INFOPLIST_FILE = HypedListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HypedList;
+			};
+			name = Debug;
+		};
+		CCF7DC4B261E50D400DA83F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8343DW9UC8;
+				INFOPLIST_FILE = HypedListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stelenatalia.HypedListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HypedList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCBAD7D02626452D00555180 /* Build configuration list for PBXNativeTarget "HypedListiOSWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBAD7D12626452D00555180 /* Debug */,
+				CCBAD7D22626452D00555180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF7DC19261E50CD00DA83F3 /* Build configuration list for PBXProject "HypedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7DC41261E50D400DA83F3 /* Debug */,
+				CCF7DC42261E50D400DA83F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF7DC43261E50D400DA83F3 /* Build configuration list for PBXNativeTarget "HypedListiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7DC44261E50D400DA83F3 /* Debug */,
+				CCF7DC45261E50D400DA83F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF7DC46261E50D400DA83F3 /* Build configuration list for PBXNativeTarget "HypedListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7DC47261E50D400DA83F3 /* Debug */,
+				CCF7DC48261E50D400DA83F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF7DC49261E50D400DA83F3 /* Build configuration list for PBXNativeTarget "HypedListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7DC4A261E50D400DA83F3 /* Debug */,
+				CCF7DC4B261E50D400DA83F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCBAD786262242C100555180 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+		CCBAD79926226DF700555180 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/UIColor-Hex-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC56B018262B0A3F007503C8 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCBAD786262242C100555180 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		CC56B01A262B0A44007503C8 /* UIColor_Hex_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCBAD79926226DF700555180 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColor_Hex_Swift;
+		};
+		CC56B01C262B0A49007503C8 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCBAD786262242C100555180 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		CC56B01E262B0A4D007503C8 /* UIColor_Hex_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCBAD79926226DF700555180 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColor_Hex_Swift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CCF7DC16261E50CD00DA83F3 /* Project object */;
+}
