@@ -37,6 +37,7 @@ class DataController: ObservableObject {
                     WidgetCenter.shared.reloadAllTimelines()
                 }
             }
+            self.sendDataToWatch()
         }
     }
 
@@ -48,11 +49,20 @@ class DataController: ObservableObject {
                     if let jsonEvents = try? decoder.decode([HypedEvent].self, from: data) {
                         DispatchQueue.main.async {
                             self.hypedEvents = jsonEvents
+                            self.sendDataToWatch()
+
                         }
                     }
                 }
             }
         }
+    }
+
+
+    func sendDataToWatch() {
+        let phoneToWatch = PhoneToWatchDataController.shared
+        let context = phoneToWatch.convertHypedEventsToContext(hypedEvents: self.upcomingEvents)
+        phoneToWatch.sendContext(context: context)
     }
 
     // We should limite here the amount of events shared 

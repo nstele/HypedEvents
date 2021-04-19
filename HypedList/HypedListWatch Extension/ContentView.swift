@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @ObservedObject var data = WatchToPhoneDataController.shared
+
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        HypedEventWatchListView(hypedEvents: data.hypedEvents)
     }
 }
 
