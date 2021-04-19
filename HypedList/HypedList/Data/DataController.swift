@@ -9,7 +9,9 @@ import Foundation
 import SwiftDate
 import UIColor_Hex_Swift
 import SwiftUI
+#if !os(tvOS)
 import WidgetKit
+#endif
 
 class DataController: ObservableObject {
 
@@ -34,7 +36,9 @@ class DataController: ObservableObject {
                 if let enconded = try? enconder.encode(self.hypedEvents) {
                     userDefault.setValue(enconded, forKey: "hypedEvents")
                     userDefault.synchronize()
+                    #if !os(tvOS)
                     WidgetCenter.shared.reloadAllTimelines()
+                    #endif
                 }
             }
             self.sendDataToWatch()
@@ -58,11 +62,12 @@ class DataController: ObservableObject {
         }
     }
 
-
     func sendDataToWatch() {
+        #if !os(tvOS)
         let phoneToWatch = PhoneToWatchDataController.shared
         let context = phoneToWatch.convertHypedEventsToContext(hypedEvents: self.upcomingEvents)
         phoneToWatch.sendContext(context: context)
+        #endif
     }
 
     // We should limite here the amount of events shared 
@@ -79,9 +84,11 @@ class DataController: ObservableObject {
     }
 
     func addFromDiscover(hypedEvent: HypedEvent) {
-        hypedEvents.append(hypedEvent)
-        hypedEvent.objectWillChange.send()
-        saveData()
+        if !hypedEvent.hasBeenAdded {
+            hypedEvents.append(hypedEvent)
+            hypedEvent.objectWillChange.send()
+            saveData()
+        }
     }
 
     func deleteHypeEvent(hypedEvent: HypedEvent) {
