@@ -1,6 +1,7 @@
 # HypedEvents
 
-Make Apps and Widgets for iOS 14, watchOS 7 and tvOS 14 using Xcode 12, Swift 5, WidgetKit and Apple Watch
+Make Apps and Widgets for iOS 14, watchOS 7 and tvOS 14 using Xcode 12, Swift 5, WidgetKit and Apple Watch. 
+Basic app to test SwiftUI in different platforms.
 
 - Create events
 - Delete events
