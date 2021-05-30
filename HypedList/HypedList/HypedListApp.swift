@@ -15,6 +15,7 @@ struct HypedListApp: App {
             .onAppear(perform: {
                 DataController.shared.getDiscoverEvents()
                 DataController.shared.loadData()
+                PhoneToWatchDataController.shared.setupSession()
             })
         }
     }

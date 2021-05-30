@@ -75,18 +75,20 @@ class HypedEvent: ObservableObject, Identifiable, Codable {
       return URL(string: url)
     }
 
+    #if !os(watchOS)
     var hasBeenAdded: Bool {
         let event =  DataController.shared.hypedEvents.first { (event) -> Bool in
             return event.id == self.id
         }
         return event != nil
     }
+    #endif
 }
 
 var testHypeEvents1: HypedEvent {
     let event = HypedEvent()
 
-//    if let image = UIImage(named: "wwdc"), let data = image.pngData() {
+//    if let image = UIImage(named: "wwdc"), let data = image.jpegData(compressionQuality: 0.9) {
 //        event.imageData = data
 //    }
     event.title = "WWDC 2021"
@@ -99,7 +101,7 @@ var testHypeEvents1: HypedEvent {
 var testHypeEvents2: HypedEvent {
     let event = HypedEvent()
 
-    if let image = UIImage(named: "wwdc2"), let data = image.pngData() {
+    if let image = UIImage(named: "wwdc2"), let data = image.jpegData(compressionQuality: 0.9) {
         event.imageData = data
     }
     event.title = "Family trip to Jackson, this is family and friends trip that you could enjoy"

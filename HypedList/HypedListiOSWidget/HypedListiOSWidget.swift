@@ -34,7 +34,7 @@ struct Provider: TimelineProvider {
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< upcoming.count {
-            let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
+            let entryDate = Calendar.current.date(byAdding: .minute, value: hourOffset, to: currentDate)!
             let entry = HypeEventEntry(date: entryDate, hypedEvent: upcoming[hourOffset])
             entries.append(entry)
         }
