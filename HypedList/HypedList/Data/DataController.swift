@@ -9,7 +9,9 @@ import Foundation
 import SwiftDate
 import UIColor_Hex_Swift
 import SwiftUI
+#if !os(tvOS)
 import WidgetKit
+#endif
 
 class DataController: ObservableObject {
 
@@ -32,9 +34,12 @@ class DataController: ObservableObject {
             if let userDefault = UserDefaults(suiteName: "group.com.stelenatalia.hypedlist") {
                 let enconder = JSONEncoder()
                 if let enconded = try? enconder.encode(self.hypedEvents) {
+                    self.postUpcomingEvents()
                     userDefault.setValue(enconded, forKey: "hypedEvents")
                     userDefault.synchronize()
+                    #if !os(tvOS)
                     WidgetCenter.shared.reloadAllTimelines()
+                    #endif
                 }
             }
             self.sendDataToWatch()
@@ -58,11 +63,12 @@ class DataController: ObservableObject {
         }
     }
 
-
     func sendDataToWatch() {
+        #if !os(tvOS)
         let phoneToWatch = PhoneToWatchDataController.shared
         let context = phoneToWatch.convertHypedEventsToContext(hypedEvents: self.upcomingEvents)
         phoneToWatch.sendContext(context: context)
+        #endif
     }
 
     // We should limite here the amount of events shared 
@@ -79,9 +85,11 @@ class DataController: ObservableObject {
     }
 
     func addFromDiscover(hypedEvent: HypedEvent) {
-        hypedEvents.append(hypedEvent)
-        hypedEvent.objectWillChange.send()
-        saveData()
+        if !hypedEvent.hasBeenAdded {
+            hypedEvents.append(hypedEvent)
+            hypedEvent.objectWillChange.send()
+            saveData()
+        }
     }
 
     func deleteHypeEvent(hypedEvent: HypedEvent) {
@@ -104,7 +112,6 @@ class DataController: ObservableObject {
             hypedEvents.append(hypedEvent)
         }
         saveData()
-
     }
 
     func getDiscoverEvents() {
@@ -151,6 +158,27 @@ class DataController: ObservableObject {
                             self.discoverHypeEvents = hypeRemoteEvents
                         }
                     }
+                }
+            }.resume()
+        }
+    }
+
+    func postUpcomingEvents() {
+        if let url = URL(string: "https://api.jsonbin.io/b/607f65c7a2213a0c14277bb4") {
+            var request = URLRequest(url: url)
+            let enconder = JSONEncoder()
+            if let enconded = try? enconder.encode(self.hypedEvents) {
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.httpMethod = "PUT"
+                request.httpBody = enconded
+            }
+
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                // handle the result here.
+                if let resp = response {
+                  print(resp)
+                } else  {
+                    print((error != nil) ? error.debugDescription : "no error")
                 }
             }.resume()
         }
