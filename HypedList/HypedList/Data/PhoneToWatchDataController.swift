@@ -35,11 +35,11 @@ class PhoneToWatchDataController: NSObject, WCSessionDelegate {
     }
 
     func sessionDidBecomeInactive(_ session: WCSession) {
-        print("sdadasd")
+        print("sessionDidBecomeInactive")
     }
 
     func sessionDidDeactivate(_ session: WCSession) {
-       print("dkfjsfklfsklfj")
+       print("sessionDidDeactivate")
     }
 
     func sendContext(context:[String:Any]) {
