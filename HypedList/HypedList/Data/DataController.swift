@@ -34,6 +34,7 @@ class DataController: ObservableObject {
             if let userDefault = UserDefaults(suiteName: "group.com.stelenatalia.hypedlist") {
                 let enconder = JSONEncoder()
                 if let enconded = try? enconder.encode(self.hypedEvents) {
+                    self.postUpcomingEvents()
                     userDefault.setValue(enconded, forKey: "hypedEvents")
                     userDefault.synchronize()
                     #if !os(tvOS)
@@ -111,7 +112,6 @@ class DataController: ObservableObject {
             hypedEvents.append(hypedEvent)
         }
         saveData()
-
     }
 
     func getDiscoverEvents() {
@@ -158,6 +158,27 @@ class DataController: ObservableObject {
                             self.discoverHypeEvents = hypeRemoteEvents
                         }
                     }
+                }
+            }.resume()
+        }
+    }
+
+    func postUpcomingEvents() {
+        if let url = URL(string: "https://api.jsonbin.io/b/607f65c7a2213a0c14277bb4") {
+            var request = URLRequest(url: url)
+            let enconder = JSONEncoder()
+            if let enconded = try? enconder.encode(self.hypedEvents) {
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.httpMethod = "PUT"
+                request.httpBody = enconded
+            }
+
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                // handle the result here.
+                if let resp = response {
+                  print(resp)
+                } else  {
+                    print((error != nil) ? error.debugDescription : "no error")
                 }
             }.resume()
         }
